@@ -13,3 +13,10 @@ function getAllStudents($condition =1){
     $result = mysqli_query($connection, $sql);
     return $result;
 }
+
+function getAllMarks($condition =1){
+    global $connection;
+    $sql = "SELECT * FROM studentmarks WHERE $condition";
+    $result = mysqli_query($connection, $sql);
+    return $result;
+}

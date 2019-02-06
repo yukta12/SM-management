@@ -11,7 +11,7 @@
             <span>Students</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-            <a class="dropdown-item" href="#">Add Students</a>
+            <a class="dropdown-item" href="students.php">Add Students</a>
             <a class="dropdown-item" href="#">Add marks</a>
             <a class="dropdown-item" href="#">Fees</a>
         </div>

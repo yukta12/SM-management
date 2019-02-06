@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-md-12">
-        <a href="students.php?source=add_post" class="btn btn-primary">Add Student</a>
+        <a href="students.php?source=add_student" class="btn btn-primary">Add Student</a>
     </div>
 </div>
 <div class="mb-5"></div>
@@ -35,7 +35,7 @@
                 $resultset = getAllStudents();
                 while($row = mysqli_fetch_assoc($resultset)){
                     $enrollment_no= $row['enrollment_no'];
-                    $name = $row['name'];
+                    $name = $row['student_name'];
                     $mobile = $row['mobile'];
                     $email_id = $row['email_id'];
                     $address = $row['address'];
@@ -47,7 +47,7 @@
                     $image = $row['image'];
                     echo<<<STUDENT
 <tr>
-<td>$enrollment_no</td>
+<td>$enrollment_no</td   >
 <td><img src="../images/$image" alt="" class="img-fluid" width="100"></td>
 <td>$name</td>
 <td>$mobile</td>
@@ -60,7 +60,7 @@
 <td>$guardian_occupation</td>
 <td>$office_address</td>
 <td><a href="posts.php?source=edit_post&post_id=post_id" class="btn btn-info"><span class="fa fa-edit"></span></a></td>
-<td><a href="posts.php?source=delete_post&post_id=post_id" class="btn btn-danger"><span class="fa fa-trash"></span></a></td>
+<td><a href="students.php?source=delete_student&enrollment_no=$enrollment_no" class="btn btn-danger"><span class="fa fa-trash"></span></a></td>
 
 
 </tr>

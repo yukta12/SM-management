@@ -8,10 +8,10 @@ if(isset($_POST['register'])){
         $password= $_POST['password1'];
         $hashed_password = password_hash($password,PASSWORD_DEFAULT);
         $query = "INSERT INTO users(email,password) VALUES('$email','$hashed_password')";
-        if(mysqli_query($conn, $query)){
+        if(mysqli_query($connection, $query)){
            header("Location: index.php");
         }else{
-            echo mysqli_error($conn);
+            echo mysqli_error($connection);
         }
     }else {
         echo("Oops! Password did not match! Try again. ");
