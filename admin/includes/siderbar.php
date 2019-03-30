@@ -18,12 +18,28 @@
     </li>
     <li class="nav-item">
         <a class="nav-link" href="charts.html">
-            <i class="fas fa-fw fa-chart-area"></i>
-            <span>Charts</span></a>
+            <i class="fas fa-fw fa-user-circle"></i>
+            <span>Parents</span></a>
     </li>
-    <li class="nav-item">
-        <a class="nav-link" href="tables.html">
-            <i class="fas fa-fw fa-table"></i>
-            <span>Tables</span></a>
+       <li class="nav-item">
+        <a class="nav-link" href="charts.html">
+            <i class="fas fa-fw fa-minus"></i>
+            <span>Defaulter</span></a>
     </li>
-</ul>
+     <li class="nav-item">
+        <a class="nav-link" href="attendance.php">
+            <i class="fas fa-fw fa-check"></i>
+            <span>Attendance</span></a>
+    </li>
+     <li class="nav-item">
+        <a class="nav-link" href="charts.html">
+            <i class="fas fa-fw fa-percentage"></i>
+            <span>Marks</span></a>
+    </li>
+     <li class="nav-item">
+        <a class="nav-link" href="charts.html">
+            <i class="fas fa-fw fa-list"></i>
+            <span>Events</span></a>
+    </li>
+    
+    </ul>

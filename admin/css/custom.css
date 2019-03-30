@@ -1,0 +1,14 @@
+.attendance-report{
+    background-color: #0073B7;
+    padding: 10px;
+    color: #fff;
+}
+.class-container
+{
+    border: solid 1px #0073B7;
+    padding: 8%;
+}
+.class-container-2{
+    border: solid 1px #0073B7;
+    padding: 7%;
+}
